@@ -3,11 +3,11 @@ jdk:
   - openjdk8
 
 script:
-  - ./gradlew build --scan -s
+  gradle assemble
 
 env:
   global:
-    - CODECOV_TOKEN=""
+    - CODECOV_TOKEN="dee47087-d32c-4df8-bca6-f7cae78ddf74"
 
 # используем режим обычного пользователя для сборки проекта.
 sudo: false
